@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Link WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <meta name="theme-color" content="#25D366">
+</head>
+<body>
+    <div class="container">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp fa-3x"></i>
+        </div>
+        <h1>Gerador de Link WhatsApp</h1>
+        
+        <div class="input-group">
+            <label for="phoneNumber">Número de WhatsApp (com DDD e código do país):</label>
+            <input type="tel" id="phoneNumber" pattern="[0-9]{12,}" placeholder="Ex: 5511999887766" required>
+            <small class="input-help">Formato: código do país + DDD + número (sem espaços ou caracteres especiais)</small>
+        </div>
+        
+        <div class="input-group">
+            <label for="customMessage">Mensagem personalizada (opcional):</label>
+            <textarea id="customMessage" placeholder="Digite sua mensagem aqui..." rows="3"></textarea>
+            <small class="input-help">Formato do link gerado: https://wa.me/SEUNUMERO?text=SUA_MENSAGEM</small>
+        </div>
+        
+        <button class="btn pulse" id="generateBtn">
+            <i class="fas fa-link"></i> Gerar Link
+        </button>
+        
+        <div id="result-container" class="hidden">
+            <div class="link-display" id="link-display"></div>
+            
+            <div class="button-group">
+                <button class="btn copy-btn" onclick="copyLink()">
+                    <i class="fas fa-copy"></i> Copiar Link
+                </button>
+                
+                <a id="openLinkButton" class="btn open-btn" href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Abrir no WhatsApp
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Gerador de Link WhatsApp - Versão 2.0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

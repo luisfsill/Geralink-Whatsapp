@@ -1,0 +1,279 @@
+:root {
+    --dark-gray: #2a2a2a;
+    --medium-gray: #3a3a3a;
+    --light-gray: #4a4a4a;
+    --purple: #8a2be2;
+    --light-purple: #9d4edd;
+    --text-color: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--dark-gray);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--medium-gray);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--purple);
+    margin-bottom: 25px;
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--light-purple);
+    border-radius: 3px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--light-gray);
+    background-color: var(--dark-gray);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--purple);
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
+}
+
+.btn {
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: var(--light-purple);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.link-display {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    border-left: 4px solid var(--purple);
+    word-break: break-all;
+    text-align: left;
+    font-size: 14px;
+}
+
+.whatsapp-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--purple);
+}
+
+.copy-btn {
+    background-color: var(--light-gray);
+}
+
+.copy-btn:hover {
+    background-color: var(--medium-gray);
+}
+
+.open-btn {
+    background-color: var(--purple);
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(138, 43, 226, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+    }
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: slideIn 0.3s forwards;
+}
+
+.notification.success {
+    background-color: #4CAF50;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
+.notification.hide {
+    animation: slideOut 0.3s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Adicione isso ao seu arquivo CSS existente */
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--light-gray);
+    background-color: var(--dark-gray);
+    color: var(--text-color);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    resize: vertical;
+    min-height: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--purple);
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
+}
+
+.input-group + .input-group {
+    margin-top: 20px;
+}
+
+.input-help {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.clear-btn {
+    background-color: #f44336;
+    border: 2px solid #d32f2f;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}

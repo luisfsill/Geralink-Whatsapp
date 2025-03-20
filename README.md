@@ -2,7 +2,7 @@
 
 Um gerador de links para WhatsApp simples e eficiente, que permite criar links personalizados para iniciar conversas no WhatsApp sem precisar adicionar o contato.
 
-![Logo do WhatsApp](assets/favicon.png)
+![Logo do WhatsApp](assets/favicon.svg)
 
 ## 🚀 Funcionalidades
 

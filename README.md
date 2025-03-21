@@ -2,7 +2,7 @@
 
 Um gerador de links para WhatsApp simples e eficiente, que permite criar links personalizados para iniciar conversas no WhatsApp sem precisar adicionar o contato.
 
-![Logo do WhatsApp](assets/favicon.svg)
+![Preview do Projeto](assets/preview.png)
 
 ## 🚀 Funcionalidades
 
@@ -62,11 +62,11 @@ Onde:
 
 ## ✒️ Autor
 
-* **Seu Nome** - *Desenvolvimento* - [seu-usuario](https://github.com/seu-usuario)
+* **Luis Felipe** - *Desenvolvimento* - [Luis Felipe](https://github.com/luisfsill)
 
 ## 📄 Licença
 
-Este projeto está sob a licença [MIT](LICENSE) - veja o arquivo LICENSE para detalhes.
+Este projeto está sob a licença [MIT](LICENSE)
 
 ## 🎁 Expressões de gratidão
 

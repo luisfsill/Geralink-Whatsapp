@@ -23,7 +23,7 @@ Um gerador de links para WhatsApp simples e eficiente, que permite criar links p
 
 1. Faça download ou clone este repositório
    ```
-   git clone https://github.com/seu-usuario/Geralink-Whatsapp.git
+   git clone https://github.com/luisfsill/Geralink-Whatsapp.git
    ```
 
 2. Abra o arquivo `index.html` em seu navegador
